@@ -7,8 +7,8 @@ def contact_book():
         rows = csv.reader(f, delimiter=",")
         contacts_list = list(rows)
     find_name = '(Ус|Ол|Ва|Ма|Ви|Ри|Ге|На|Вя|Лу|Ол|Вл|Па|Вл|Ла|Ив|Ал)([а-я]+)'
-    find_number = '(8|\+7)(\ ?)(\(?)(\w{3})(\)?)(\-?)(\ ?)(\w{3})(\-?)(\w{2})(\-?)(\w{2})'
-    find_dopnumber = '(доб\.\ [0-9]{4})'
+    find_number = '(8|\+7)(\s?)(\(?)(\w{3})(\)?)(\-?)(\s?)(\w{3})(\-?)(\w{2})(\-?)(\w{2})'
+    find_dopnumber = '(доб\.\s[0-9]{4})'
     find_work = 'ФНС|Ми[а-я]+'
     find_email = '[A-Za-z1-9\.]+@[a-z]+\.[a-z]+'
     list_contact = []
